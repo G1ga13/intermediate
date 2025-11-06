@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding-left: 165px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 1110px;
+  height: 58px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+.tmbox {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(241, 103, 24, 1);
+}
+
+.order_1 {
+  width: 175px;
+  height: 58px;
+  border-radius: 8px;
+  font-family: "Bitcount Grid Single", system-ui;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: rgba(22, 37, 66, 1);
+  background-color: rgba(232, 239, 242, 1);
+}
+
+.box_1 {
+  width: 445px;
+  height: 312px;
+  border: 1px solid black;
+}
