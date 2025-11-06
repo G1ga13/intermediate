@@ -4,8 +4,9 @@
 }
 
 body {
-  padding-left: 165px;
-  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
@@ -14,6 +15,7 @@ header {
   width: 1110px;
   height: 58px;
   align-items: center;
+  margin-top: 55px;
 }
 
 .tmbox {
