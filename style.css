@@ -59,7 +59,8 @@ header {
   display: flex;
   margin-top: 83px;
   align-items: center;
-  width: 1110px;
+  max-width: 1100px;
+  width: 100%;
   justify-content: space-between;
   position: relative;
 }
@@ -111,6 +112,11 @@ header {
   gap: 30px;
 }
 
+.keyboard {
+  width: 540px;
+  height: 480px;
+}
+
 .sub_button {
   font-family: "Bitcount Grid Single", system-ui;
   font-weight: 700;
@@ -123,11 +129,11 @@ header {
 
 .box_2 {
   display: flex;
-  width: 1110px;
+  max-width: 1110px;
+  width: 100%;
   margin-top: 30px;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid black;
   position: relative;
 }
 
@@ -269,18 +275,152 @@ span {
   background-color: #ff9b62;
 }
 
-@media (max-width: 1123px) {
+@media (max-width: 1523px) {
   .graybox,
   .graybox_2 {
     display: none;
   }
+}
+
+@media (max-width: 1125px) and (min-width: 769px) {
+  header {
+    width: 689px;
+  }
 
   .box_1 {
-    max-width: 770px;
-    width: 100%;
+    gap: 69px;
+    width: 689px;
+  }
+
+  .section_start {
+    justify-content: space-between;
+  }
+
+  .first_header {
+    font-family: "Bitcount Grid Single", system-ui;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+  }
+
+  .box1_text {
+    width: 339px;
+    height: 78px;
   }
 
   .keyboard {
-    max-width: 400px;
+    width: 379px;
+    height: 425px;
+  }
+
+  .box_2 {
+    flex-wrap: wrap;
+    width: 689px;
+  }
+
+  .images_start {
+    gap: 30px;
+  }
+
+  .orangekey {
+    width: 214px;
+    height: 320px;
+  }
+
+  .orangekey_2 {
+    width: 445px;
+    height: 320px;
+  }
+
+  .box_2_ending {
+    display: flex;
+    flex-direction: row;
+    width: 689px;
+    height: 108px;
+    margin-top: 72px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box_3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 631px;
+    height: 650px;
+    gap: 72px;
+  }
+
+  footer {
+    width: 400px;
+    margin-top: 142px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  header {
+    width: 327px;
+    height: 48px;
+  }
+
+  .order_1 {
+    width: 150px;
+    height: 48px;
+  }
+
+  .box_1 {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+  }
+
+  .keyboard {
+    width: 372px;
+    height: 331px;
+    margin-top: 64px;
+  }
+
+  .images_start {
+    display: flex;
+    border: 1px solid red;
+    width: 390px;
+    gap: 24px;
+  }
+
+  .orangekey {
+    width: 129px;
+    height: 193px;
+  }
+
+  .orangekey_2 {
+    width: 220px;
+    height: 193px;
+  }
+
+  .box_2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box_2_ending {
+    text-align: center;
+    margin-top: 75px;
+  }
+
+  .box_3 {
+    width: 300px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .box_3 > div {
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
   }
 }
