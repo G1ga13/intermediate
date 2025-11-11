@@ -422,7 +422,6 @@ span {
 
   .box_3 {
     width: 300px;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
