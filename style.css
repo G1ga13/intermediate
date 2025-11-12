@@ -17,7 +17,6 @@ header {
   margin-top: 55px;
   max-width: 1110px;
   width: 100%;
-  min-width: 480px;
 }
 
 .tmbox {
@@ -113,7 +112,7 @@ header {
 }
 
 .keyboard {
-  width: 540px;
+  max-width: 540px;
   height: 480px;
 }
 
@@ -135,8 +134,6 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  max-width: 1110px;
-  width: 100%;
 }
 
 .graybox_2 {
@@ -228,7 +225,6 @@ header {
 }
 
 footer {
-  width: 1110px;
   margin-top: 128px;
   margin-bottom: 39px;
   text-align: center;
@@ -267,14 +263,9 @@ span {
   }
 }
 
-@media (max-width: 1125px) and (min-width: 769px) {
+@media (max-width: 1125px) {
   header {
     width: 689px;
-  }
-
-  .keyboard {
-    max-width: 400px;
-    width: 100%;
   }
 
   .box {
@@ -355,6 +346,8 @@ span {
 
 @media (max-width: 768px) {
   header {
+    display: flex;
+    justify-content: space-between;
     width: 327px;
     height: 48px;
   }
@@ -370,17 +363,58 @@ span {
     width: 327px;
   }
 
+  .section_start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 327px;
+    height: 286px;
+  }
+
+  .box1_text {
+    width: 327px;
+    height: 78px;
+    padding-top: 20px;
+  }
+
+  .box1_ending {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    margin-top: 25px;
+    padding-top: 80px;
+  }
+
+  .order_2 {
+    width: 150px;
+    height: 48px;
+    border-radius: 8px;
+  }
+
+  .sub_button {
+    width: 150px;
+    height: 26px;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+  }
+
+  .first_header {
+    width: 327px;
+    height: 96px;
+  }
+
   .keyboard {
-    width: 372px;
+    width: 300px;
     height: 331px;
-    margin-top: 64px;
   }
 
   .images_start {
-    display: flex;
-    border: 1px solid red;
-    width: 390px;
-    gap: 24px;
+    width: 350px;
+    margin-left: -100px;
   }
 
   .orangekey {
@@ -389,32 +423,61 @@ span {
   }
 
   .orangekey_2 {
-    width: 220px;
+    width: 218px;
     height: 193px;
   }
 
   .box_2 {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
   }
 
   .box_2_ending {
+    flex-direction: column;
     text-align: center;
-    margin-top: 75px;
+    justify-content: center;
+    padding-top: 75px;
+    width: 300px;
+  }
+
+  .second_header {
+    width: 255px;
+    height: 108px;
+  }
+
+  .box_2_text {
+    width: 327px;
+    height: 104px;
   }
 
   .box_3 {
-    width: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     text-align: center;
+    height: 100%;
+    width: 327px;
   }
 
   .box_3 > div {
     justify-content: center;
     align-items: center;
     gap: 26px;
+    width: 327px;
+    height: 297px;
+    top: 2538px;
   }
-}
+
+  footer {
+    width: 335px;
+  }
+
+  .signature {
+    width: 335px;
+    height: 26px; 
+  }
+    
